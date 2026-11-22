@@ -2,6 +2,9 @@
 from Contour import Contour
 import matplotlib.pyplot as plt
 from itertools import cycle
+import comparison as c
+import numpy as np
+from matplotlib.lines import Line2D
 
 def plt_contours(contours: list[Contour], ax=None, **kwargs):
     colors = cycle([
@@ -39,7 +42,6 @@ def plt_contour(ctr: Contour, ax=None, **kwargs):
     plt.ylabel('Frequency (Hz)')
 
     return fig, ax
-
 
 
 if __name__ == "__main__":
