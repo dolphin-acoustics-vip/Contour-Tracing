@@ -116,31 +116,9 @@ def find_correct_matches(truth, pred, tolerance=0.25):
 
 
 
-
-
-
-
-
 def fragmentation():
     pass
         
-        
-    
-    
-
-
-def mean():
-    pass
-
-
-def median():
-    pass
-
-def mode():
-    pass
-
-def data_range():
-    pass
 
 
 if __name__ == "__main__":
@@ -149,7 +127,7 @@ if __name__ == "__main__":
     # c3 = Contour("comparison/test-data/cb_sel_65_T08_1_T08_1_Sarasota_sam.csv", "sam")
     c4 = Contour("comparison/test-data/cb_sel_65_T08_1_T08_1_Sarasota_crepe.csv", "crepe")
     
-    print(coverage(c1.segments, c4.segments, 0.2))
+    print(coverage(c1.segments, c4.segments, 0.25))
 
     v.plt_contours([c1, c4], s=1)
     plt.show()
